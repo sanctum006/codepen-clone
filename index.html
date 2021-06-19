@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Pen</title>
+
+    <style class="style"></style>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="./images/codepen-logo.png" type="image/x-icon">
+
+    <!-- Font-awesome Link -->
+    <script src="https://kit.fontawesome.com/a1c21ab3f6.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="brand-logo">
+            <i class="fab fa-codepen"></i>
+        </div>
+    
+        <div class="nav-bar-items">
+            <div class="pen-info">
+                <div class="pen-info-1">
+                    <h1 class="pen-name" contenteditable="true">Untitled</h1>
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <h2>Captain Anonymous</h2>
+            </div>
+        
+            <div class="nav-items">
+                <button class="save"><i class="fas fa-cloud"></i> Save</button>
+                <button class="settings"><i class="fas fa-cog"></i> Settings</button>
+                <button class="view"><i class="far fa-eye"></i> Change View</button>
+                <button class="hamburger-menu"><i class="fas fa-bars"></i></button>
+                <button class="sign-up">Sign Up</button>
+                <button class="log-in">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="editor-window">
+            <div class="html-editor edit">
+                <div class="editor-heading">
+                    <h1><i class="fas fa-cog"></i>HTML</h1>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <textarea class="html-box" name="html-box" value="" id=""></textarea>
+            </div>
+            <div class="css-editor edit">
+                <div class="editor-heading">
+                    <h1><i class="fas fa-cog"></i>CSS</h1>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <textarea class="css-box" name="js-box" id=""></textarea>
+            </div>
+        </div>
+        <div class="resize-bar"></div>
+        <div class="output-window">
+            <!-- <iframe class="output-window-tab" src="./source/index.html" frameborder="0"></iframe> -->
+        </div>
+    </div>
+
+    <footer>
+        <button class="footer-btn console">Console</button>
+        <button class="footer-btn assets">Assets</button>
+        <button class="footer-btn shortcuts">Shortcuts</button>
+    </footer>
+    
+    <script src="./index.js"></script>
+    <script class="script"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    background: #1E1F26;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo i {
+    font-size: 1.8rem;
+    margin: 0 5px 0 8px;
+}
+
+.nav-bar-items {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.pen-info {
+    flex-grow: 1;
+}
+
+.pen-info-1 {
+    display: flex;
+    align-items: center;
+}
+
+.pen-name {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 3px 0;
+    color: white;
+}
+
+.pen-name:focus {
+    outline: none;
+    border: none;
+}
+
+.pen-info i {
+    font-size: 0.8rem;
+    margin: 0 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+.pen-info h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    background: #444857;
+    font-size: 0.95rem;
+    padding: 12px 19px 12px 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: 50ms;
+}
+
+button:hover {
+    background: #5a5f73;
+}
+
+button i {
+    font-size: 0.8rem;
+    margin: 3px;
+}
+
+.settings {
+    padding: 11px 19px 11px 17px;
+    position: relative;
+    top: 1px;
+}
+
+.fa-cog {
+    font-size: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 9px 15px 9px 15px;
+}
+
+.hamburger-menu i {
+    font-size: 1rem;
+}
+
+.sign-up {
+    background: rgba(71,207,115,255);
+    color: black;
+    padding: 13px 18px;
+    position: relative;
+    top: 1px;
+}
+
+.sign-up:hover {
+    background: rgba(36,140,70,255);
+}
+
+.log-in {
+    padding: 13px 18px;
+    position: relative;
+    top: 1px;
+}
+
+/* Editor Window */
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.editor-window {
+    width: 400px;
+    background: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit {
+    background-color: white;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #1d1e22;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 0.6rem;
+    background-color: #1a1b1f;
+    border: none;
+    border-top: 3px solid #444857;
+    /* border-bottom: 1px solid rgb(172, 170, 170); */
+    outline: rgb(124, 124, 116);
+}
+
+.editor-heading i {
+    padding: 5px 8px;
+    background-color: #444857;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #CCC;
+}
+
+.editor-heading h1{
+    display: flex;
+    align-items: center;
+    color:#CCC;
+}
+
+.editor-heading h1 i{
+    font-size: 0.6rem;
+    margin-right: 5px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    /* height: 100%; */
+    color: white;
+    align-items: stretch;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #1d1e22;
+    resize: none;
+    font-size: 0.9rem;
+}
+
+input:hover {
+    border: none;
+    outline: none;
+}
+
+.resize-bar {
+    width: 15px;
+    background: #444857;
+    cursor: col-resize;
+}
+
+.output-window {
+    display: flex;
+    /* background: #353944; */
+}
+
+.output-window-tab {
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+/* Footer */
+
+footer {
+    background: #2c303a;
+    padding: 0 5px;
+}
+
+.footer-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 2px;
+    margin: 5px 1px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .pen-info h1 {
+        font-size: 17px;
+    }
+    
+    .pen-info i {
+        font-size: 0.6rem;
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .pen-info h2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .save, .view, .settings {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: unset;
+        position: relative;
+        top: 1px;
+    }
+
+    .sign-up {
+        background: rgba(71,207,115,255);
+        color: black;
+        font-size: 0.9rem;
+        padding: 11px 15px;
+        top: 0;
+    }
+    
+    .log-in {
+        padding: 11px 15px;
+        top: 0;
+        font-size: 0.9rem;
+    }    
+}
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .editor-window {
+        flex-grow: 2;
+        flex-direction: row;
+        background-color: red;
+        width: 100%;
+    }
+
+    .edit {
+        border: none;
+        border-right: 3px solid #444857;
+    }
+
+    .html-box, .css-box {
+        flex-grow: 1;
+    }
+
+    .output-window {
+        flex-grow: 3;
+    }
+}
