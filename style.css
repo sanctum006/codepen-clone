@@ -297,3 +297,23 @@ footer {
         flex-grow: 3;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .log-in {
+        font-size: 0.7rem;
+        padding: 8px 11px;
+    }
+
+    .sign-up {
+        font-size: 0.7rem;
+        padding: 8px 11px;
+    }
+
+    .hamburger-menu i {
+        font-size: 0.7rem;
+    }
+
+    .hamburger-menu {
+        padding: 5px 11px;
+    }
+}
